@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <title>Json data visualizer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+        body {
+            color: #000;
+            font-family: Monospace;
+            font-size: 13px;
+            text-align: center;
+            font-weight: bold;
+
+            background-color: #fff;
+            margin: 0px;
+            overflow: hidden;
+        }
+
+        #btn {
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            z-index: 1;
+        }
+        #btn button { background-color: greenyellow; height: 30px;}
+
+        #canvas {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            border: 0;
+        }
+
+        #data-input {
+            position: absolute;
+            width: 50%;
+            height: 200px;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 30px;
+        }
+
+        #add-btn {
+            position: absolute;
+            right: 50px;
+            bottom: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="btn">
+        <a href="https://github.com/Immugio">See me on github</a>
+    </div>
+
+    <canvas id="canvas"></canvas>
+    <textarea id="data-input"></textarea>
+    <button id="add-btn">Add</button>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
